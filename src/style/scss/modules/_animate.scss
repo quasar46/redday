@@ -1,0 +1,41 @@
+.aniBase {
+    @for $i from 1 through 5 {
+        img:nth-child(#{$i}) {
+            transition: .3s;
+            transition-delay: 0.1s * $i;
+            bottom: -200px;
+            position: relative;
+            height: 260px;
+            object-fit: contain;
+            object-position: center;
+            opacity: 0;
+
+            @media (max-width:1300px) {
+                height: 18vw;
+            }
+
+            @media (max-width:768px) {
+                bottom: -40px;
+                height: 20vw;
+            }
+        }
+    }
+}
+
+.aniIn {
+    img {
+        bottom: 0 !important;
+        opacity: 1 !important;
+    }
+}
+
+.aniOut {
+    img {
+        bottom: 200px !important;
+        opacity: 0 !important;
+
+        @media (max-width:768px) {
+            bottom: 70px !important;
+        }
+    }
+}

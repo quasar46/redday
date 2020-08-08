@@ -1,0 +1,214 @@
+.parent-2 {
+    margin-top: 7em;
+}
+
+.feedback {
+    padding: {
+        left: 50px;
+        right: 50px;
+    }
+
+    ;
+    width: 100%;
+
+    margin: {
+        top: 3em;
+    }
+
+    .inform-feedback {
+        span {
+            display: block;
+            padding-left: 130px;
+            padding-right: 130px;
+            font-weight: 600;
+            font-family: "ProximaNova", sans-serif;
+            font-size: 34px;
+            margin-bottom: 80px;
+            line-height: 1.4;
+        }
+    }
+
+    .feed_detail {
+
+        width: 100%;
+        background: #f2f2f2;
+        border-radius: 1500px;
+        box-sizing: border-box;
+
+        padding: {
+            top: 24px;
+            bottom: 24px;
+            left: 24px;
+            right: 24px;
+        }
+
+        position: relative;
+
+        .feed_triangle {
+            width: 75px;
+            position: absolute;
+            top: 92%;
+            left: 5%;
+            z-index: -1;
+            transform: translateX(-3px)
+        }
+
+        .triangleM {
+            display: none;
+        }
+
+        .emo_block {
+            justify-content: space-around;
+            position: relative;
+            align-items: center;
+            left: 0;
+            height: 100%;
+            //overflow: hidden;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            img {
+                object-fit: contain;
+                flex-grow: 1;
+                max-width: calc(100%/5);
+                width: 100%;
+                padding: 3.5em;
+            }
+        }
+    }
+
+    .feed_slick {
+        margin-top: 5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-grow: 0;
+
+        .slick-list {
+            width: 93%;
+        }
+
+        .feed_item {
+            cursor: pointer;
+            height: 5em;
+            display: flex !important;
+            background-size: 80% auto;
+            background-position: center;
+            position: relative;
+
+            span {
+                display: block;
+                position: absolute;
+                left: 25px;
+                right: 25px;
+                top: 0;
+                bottom: 0;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+
+
+
+        .slick-prev {
+            left: 10px !important;
+        }
+
+        .slick-next {
+            right: 10px !important;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            content: none;
+        }
+
+        .slick-arrow {
+            &:hover {
+                span {
+                    background: #DD1F3B;
+                }
+
+                .btn-next {
+                    &:before {
+                        left: 0;
+                    }
+
+                    &:after {
+                        left: 100%;
+                    }
+                }
+
+                .btn-prev {
+                    &:before {
+                        left: -100%;
+                    }
+
+                    &:after {
+                        left: 0;
+                    }
+                }
+            }
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                width: 34px;
+                height: 34px;
+                background: #f2f2f2;
+                border-radius: 150px;
+                transition: .2s;
+                overflow: hidden;
+
+            }
+
+            .btn-next {
+                &:before {
+                    content: url("../btns/rtl-w.svg");
+                    position: absolute;
+                    transition: .2s;
+                    top: 0;
+                    left: -100%;
+                    width: 34px;
+                    height: 34px;
+                }
+
+                &:after {
+                    content: url("../btns/rtl.svg");
+                    position: absolute;
+                    transition: .2s;
+                    top: 0;
+                    left: 0;
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+
+            .btn-prev {
+                &:before {
+                    content: url("../btns/ltl.svg");
+                    position: absolute;
+                    transition: .2s;
+                    top: 0;
+                    left: 0;
+                    width: 34px;
+                    height: 34px;
+                }
+
+                &:after {
+                    content: url("../btns/ltl-w.svg");
+                    position: absolute;
+                    transition: .2s;
+                    top: 0;
+                    left: 100%;
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+        }
+    }
+}

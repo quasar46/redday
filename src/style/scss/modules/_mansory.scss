@@ -1,0 +1,308 @@
+.morph {
+    display: flex;
+    justify-content: center;
+}
+
+#textLink {
+    fill: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: ProximaNova, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.btn-mob {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 4em;
+
+    a {
+        width: 50%;
+        height: 90px;
+        background: #DD1F3B;
+        text-transform: uppercase;
+        line-height: 90px;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 1.4px;
+
+        font: {
+            family: "ProximaNova", sans-serif;
+            size: 33px;
+            weight: 700;
+        }
+
+        ;
+        color: #fff;
+    }
+}
+
+.parent-1 {
+    margin-top: 100px;
+    opacity: 0;
+}
+
+.container-man {
+    margin: 0 auto;
+    width: 100%;
+
+    .gutter-sizer {
+        width: 75px;
+    }
+
+    .item-man {
+        text-decoration: none !important;
+        max-width: 500px;
+        width: calc(100%/3 - 50px);
+        cursor: pointer;
+
+        .overlay-block {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.68);
+            left: 0;
+            opacity: 0;
+            transition: .5s;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h3 {
+                margin: {
+                    top: 0;
+                    bottom: .5rem;
+                }
+
+                ;
+                text-transform: uppercase;
+                color: #000000;
+
+                font: {
+                    family: "ProximaNova", sans-serif;
+                    weight: 700;
+                    size: 25px;
+                }
+
+                ;
+            }
+
+            span {
+                color: #000000;
+
+                font: {
+                    family: "ProximaNova", sans-serif;
+                    weight: 400;
+                    size: 21px;
+                }
+
+                ;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.switcher {
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 44px;
+    z-index: 1900;
+
+    svg {
+        width: 23px;
+        cursor: pointer;
+
+        .rect {
+            transition: .3s;
+        }
+
+        &:hover {
+            .rect {
+                fill: #CCCCCC
+            }
+        }
+
+        &:last-child {
+            margin-top: 13px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        right: 0px;
+    }
+}
+
+.all-project{
+    margin-top: 125px;
+}
+
+.tbl {
+    width: 100%;
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+
+        thead {
+            th {
+                height: 60px;
+                text-align: left;
+                padding-right: 25px;
+
+                font: {
+                    family: "ProximaNova", sans-serif;
+                    weight: 700;
+                    size: 18px;
+                }
+
+                ;
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                height: 60px;
+
+                &:hover {
+                    td {
+                        a {
+                            color: #DD1F3B;
+                        }
+                    }
+                }
+
+                td {
+                    border-top: solid 1px #f2f2f2;
+                    padding-right: 25px;
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        transition: .3s;
+
+                        h4 {
+                            font: {
+                                family: "ProximaNova", sans-serif;
+                                size: 18px;
+                                weight: 400 !important;
+                            }
+
+                            ;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+.portfolio-item-mob {
+    border-bottom: 1px solid #cccccc;
+
+    &:last-child {
+        border-bottom: none;
+
+    }
+
+    padding: {
+        top: 2rem;
+        bottom: 2rem;
+    }
+
+    ;
+
+    a {
+        text-decoration: none !important;
+        color: #000;
+
+        h4 {
+            margin: 0;
+            line-height: 45px;
+
+            font: {
+                family: "ProximaNova", sans-serif;
+                size: 31px;
+                weight: 400 !important;
+            }
+
+            ;
+
+            b {
+                font-weight: 700 !important;
+            }
+        }
+
+        p {
+            margin: {
+                top: 0;
+                bottom: 1rem;
+            }
+
+            ;
+            line-height: 45px;
+
+            font: {
+                family: "ProximaNova", sans-serif;
+                size: 30px;
+                weight: 400 !important;
+            }
+
+            ;
+        }
+
+        span {
+            color: #CCC;
+
+            font: {
+                family: "ProximaNova", sans-serif;
+                size: 25px;
+                weight: 400 !important;
+            }
+
+            ;
+        }
+    }
+
+}
+
+.page__content {
+    #port {
+        margin-bottom: 25px !important;
+    }
+
+
+    .switcher,
+    .container-man {
+        margin-top: 17px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .item-man {
+        width: 25%;
+    }
+}

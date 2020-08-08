@@ -1,0 +1,83 @@
+.redday-container {
+    max-width: 1600px;
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    outline-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.mob-off {
+    display: block;
+}
+
+.loader {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 20vh;
+    z-index: 1000500;
+    width: 100%;
+
+    .line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #dd1f3b;
+        width: 0;
+        height: 10px;
+    }
+}
+
+h2.title-inner {
+    display: none;
+    @media (max-width: 1440px) {
+        display: block;
+        font-size: 34px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
+    @media (max-width: 600px) {
+        font-size: 20px;
+        margin-bottom: 26px;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
